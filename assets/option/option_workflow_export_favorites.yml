@@ -12,7 +12,6 @@ plugins:
         password: ${JM_PASSWORD}
 
     - plugin: favorite_folder_export
-      log: false
       kwargs:
         zip_enable: true
         zip_filepath: ${ZIP_FP}
