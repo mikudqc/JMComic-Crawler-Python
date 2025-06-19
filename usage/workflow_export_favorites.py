@@ -35,6 +35,7 @@ def main():
     # 关闭logging，保证安全
     # disable_jm_log()
     option = create_option('../assets/option/option_workflow_export_favorites.yml')
+    print(option.build_jm_client()['cookies'])
     option.call_all_plugin('main', safe=False)
 
 
